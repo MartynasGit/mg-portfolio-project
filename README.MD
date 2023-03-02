@@ -1,11 +1,14 @@
 # Martynas Gumuliauskas portfolio page
 
-# Used technologies
+Hi, I am siekiantis junior software developer based in Klaipėda.
+
+# Used technologies for portfolio page
 
 - HTML
 - CSS
 - JavaScript, React
 
-# Other links
+# Other links and contact info
 
 - <a href="https://www.linkedin.com/in/martynasgum/">Linkedin</a>
+- Email: Martynas.gumul@gmail.com
