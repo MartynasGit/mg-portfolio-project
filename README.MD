@@ -1,6 +1,6 @@
 # Martynas Gumuliauskas portfolio page
 
-Hi, I am siekiantis junior software developer based in Klaipėda.
+Hi, I am apsiring junior software developer based in Klaipėda.
 
 # Used technologies for portfolio page
 
