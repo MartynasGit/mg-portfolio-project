@@ -1,13 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
-import './App.scss'
-import Layout from './components/Layout'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-      </Routes>
+      <Navbar />
+      {/* <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes> */}
     </>
   )
 }
