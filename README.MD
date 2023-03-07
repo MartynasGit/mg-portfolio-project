@@ -5,8 +5,8 @@ Hi, I am apsiring junior software developer based in Klaipėda.
 # Used technologies for portfolio page
 
 - HTML
-- CSS
-- JavaScript, React
+- CSS, Tailwind CSS, React-icons
+- JavaScript, React, Vite
 
 # Other links and contact info
 
