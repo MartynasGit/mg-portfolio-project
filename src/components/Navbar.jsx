@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../assets/MG.png'
-import { FaBars, FaTimes, FaLinkedin, FaGithub,  } from 'react-icons/fa'
-import {HiOutlineMail} from 'react-icons/hi'
+import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Navbar = () => {
@@ -32,18 +32,29 @@ const Navbar = () => {
             : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center'
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          Home
+        </li>
+        <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          About
+        </li>
+        <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          Skills
+        </li>
+        <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          Work
+        </li>
+        <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          Contact
+        </li>
       </ul>
       {/* Social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[150px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600">
             <a
-              href="/"
+              href="https://www.linkedin.com/in/martynasgum/"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Linkedin <FaLinkedin size={30} />
@@ -51,7 +62,8 @@ const Navbar = () => {
           </li>
           <li className="w-[150px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#333333]">
             <a
-              href="/"
+              href="https://github.com/MartynasGit"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               GitHub <FaGithub size={30} />
