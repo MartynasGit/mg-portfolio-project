@@ -8,17 +8,17 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed w-full h-[80px] px-4 flex justify-between items-center bg-black text-gray-300">
+    <div className="fixed w-full h-[80px] px-4 flex justify-between items-center bg-black text-gray-300 font-bold">
       <div>
         <img src={Logo} alt="Logo image" style={{ width: '120px' }} />
       </div>
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li className="hover:text-[#ed2835] duration-300">Home</li>
+        <li className="hover:text-[#ed2835] duration-300">About</li>
+        <li className="hover:text-[#ed2835] duration-300">Skills</li>
+        <li className="hover:text-[#ed2835] duration-300">Work</li>
+        <li className="hover:text-[#ed2835] duration-300">Contact</li>
       </ul>
       {/* Hamburger */}
       <div className="md:hidden z-10" onClick={handleClick}>
