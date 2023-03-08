@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div>
               <p>
-                Really interested in technology and, therefore, enjoy working
+                 I am Really interested in technology and, therefore, enjoy working
                 with full stack technologies.I am passionate about IT because
                 it has so many things to offer, always something new.
               </p>

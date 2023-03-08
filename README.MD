@@ -1,5 +1,7 @@
 # Martynas Gumuliauskas portfolio page
 
+Project is live on https://mg-protfolio.netlify.app/
+
 Hi, I am apsiring junior software developer based in Klaipėda.
 
 # Used technologies for portfolio page
