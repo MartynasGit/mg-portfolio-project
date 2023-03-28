@@ -3,6 +3,7 @@ import Logo from '../assets/MG.png'
 import { FaBars, FaTimes, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -14,11 +15,31 @@ const Navbar = () => {
       </div>
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li className="hover:text-[#ed2835] duration-300">Home</li>
-        <li className="hover:text-[#ed2835] duration-300">About</li>
-        <li className="hover:text-[#ed2835] duration-300">Skills</li>
-        <li className="hover:text-[#ed2835] duration-300">Work</li>
-        <li className="hover:text-[#ed2835] duration-300">Contact</li>
+        <li className="hover:text-[#ed2835] duration-300">
+          <Link to="home" smooth={true} offset={50} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="hover:text-[#ed2835] duration-300">
+          <Link to="about" smooth={true} offset={50} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className="hover:text-[#ed2835] duration-300">
+          <Link to="skills" smooth={true} offset={50} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className="hover:text-[#ed2835] duration-300">
+          <Link to="work" smooth={true} offset={50} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className="hover:text-[#ed2835] duration-300">
+          <Link to="contact" smooth={true} offset={50} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       {/* Hamburger */}
       <div className="md:hidden z-10" onClick={handleClick}>
@@ -33,19 +54,59 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
-          Home
+          <Link
+            onClick={handleClick}
+            to="home"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Home
+          </Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
-          About
+          <Link
+            onClick={handleClick}
+            to="about"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
-          Skills
+          <Link
+            onClick={handleClick}
+            to="skills"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Skills
+          </Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
+          <Link
+            onClick={handleClick}
+            to="work"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
           Work
+          </Link>
         </li>
         <li className="py-6 text-4xl hover:text-[#ed2835] duration-300">
-          Contact
+          <Link
+            onClick={handleClick}
+            to="contact"
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
       {/* Social icons */}
