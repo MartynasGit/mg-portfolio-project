@@ -3,6 +3,7 @@ import Admin from '../assets/projects/admin.png'
 import Kvadratai from '../assets/projects/Kvadratai.png'
 import Todo from '../assets/projects/Todo.png'
 import PVM from '../assets/projects/PVM.png'
+import School from '../assets/projects/School.png'
 
 const Work = () => {
   return (
@@ -15,6 +16,47 @@ const Work = () => {
           <p className="py-4">// Check out some of my created projects</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {/* Project Item */}
+          <div
+            style={{ backgroundImage: `url(${School})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <div>
+                <span className="text-2xl font-bold text-white tracking-wider ">
+                  School App
+                </span>
+                <div className="pt-8 text-center">
+                  <a
+                    href="https://pvm-calc.netlify.app/"
+                    target="_blank"
+                    className=" hidden"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                      Demo
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MartynasGit/school_application_fe"
+                    target="_blank"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                      FE Code
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MartynasGit/school_application_be"
+                    target="_blank"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                      BE Code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           {/* Project Item */}
           <div
             style={{ backgroundImage: `url(${PVM})` }}
@@ -44,6 +86,8 @@ const Work = () => {
               </div>
             </div>
           </div>
+
+          {/* Project Item */}
           <div
             style={{ backgroundImage: `url(${Admin})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
